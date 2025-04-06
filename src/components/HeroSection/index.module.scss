@@ -1,0 +1,66 @@
+@import '../../styles/vars';
+
+.hero{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    .bgImg{
+        position: absolute;
+        z-index: 1;
+        opacity: 30%;
+    }
+    
+    .tagline{
+        font-family: $fancyFontFamily;
+        color: black;
+        font-size: 120px;
+        margin-bottom: 10px;
+        z-index: 888;
+
+    }
+    .storeName{
+       color: black;
+       position: absolute;
+       transform: translateX(420px) translateY(-105px);
+       font-family: $defaultFontFamily;
+       font-size: 40px;
+       z-index: 888;
+       
+       span{
+        font-family: $fancyFontFamily
+       }
+    }
+
+    .title{
+         font-family: $defaultFontFamily;
+        font-size: 150px;
+        color: $secondColor;
+        z-index: 888;
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .description{
+        font-family: $semiFancyFontFamily;
+        color: $secondColor;
+        font-size: 80px;
+        z-index: 888;
+    }
+
+
+    .heroButton{
+        color: $accentColor;
+        font-size: 64px;
+        font-family: $defaultFontFamily;
+        z-index: 888;
+        margin-top: 100px;
+        border-bottom: 2px solid;
+        span{
+            font-family: $semiFancyFontFamily;
+        }
+    }
+}

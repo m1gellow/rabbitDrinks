@@ -1,0 +1,39 @@
+@import '../../styles/vars';
+
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .logo{
+        font-family: $logoFont;
+        font-size: 64px;
+        font-weight: 500;
+    }
+    .navItems{
+        font-family: $defaultFontFamily;
+        color: $secondColor;
+        font-size: 30px;
+        font-weight: lighter;
+        display: flex;
+        gap: 60px;
+        border: none;
+        transition: all .4s;
+        .link{
+            :hover{
+            border-bottom: 2px solid $secondColor;
+        }
+        }
+        
+      
+    }
+    .icons{
+        display: flex;
+        flex-direction: row;
+        gap: 42px;
+        
+      
+           
+    }
+}

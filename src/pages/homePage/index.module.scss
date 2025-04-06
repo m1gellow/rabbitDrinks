@@ -1,0 +1,14 @@
+@import '../../styles/vars';
+
+
+
+.home{
+    background-color: $bgColor;
+    padding: 12px;
+    height: 100%;
+    .header{
+    border: 15px solid $secondColor;
+    padding: 15px 35px;
+    height: 100%;
+}
+}

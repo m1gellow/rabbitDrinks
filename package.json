@@ -1,0 +1,42 @@
+{
+  "name": "rabbitdrinks",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "types": "tsc --noEmit --project ./tsconfig.app.json && tsc --noEmit --project ./tsconfig.node.json",
+    "stylecheck": "sass --update -q ./src:./node_modules/.cache/.stylecheckcache",
+    "stylelint": "stylelint --cache --cache-location ./node_modules/.cache/.stylelintcache 'src/**/*.scss' ",
+    "prettify": "prettier --log-level warn --cache --write \"{src/**/*,*}.{ts,tsx,js,json,yml,scss}\"",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "lucide-react": "^0.487.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.5.0",
+    "sass": "^1.86.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.21.0",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.21.0",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^15.15.0",
+    "husky": "^9.1.7",
+    "prettier": "^3.5.3",
+    "reset-css": "^5.0.2",
+    "stylelint": "^16.17.0",
+    "stylelint-config-prettier-scss": "^1.0.0",
+    "typescript": "~5.7.2",
+    "typescript-eslint": "^8.24.1",
+    "vite": "^6.2.0"
+  }
+}
