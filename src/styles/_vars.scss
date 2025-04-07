@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Oswald:wght@200..700&family=Pinyon+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Yesteryear&display=swap');
+@import 'https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Oswald:wght@200..700&family=Pinyon+Script&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Yesteryear&display=swap';
 $mainColor: #E8DFCE; 
 $secondColor: #2C51AD;
 $accentColor: #F24E54;
@@ -8,6 +8,13 @@ $whiteFontColor: #E8DFCE;
 $fontColor: #2C51AD;
 $white: #fff;
 $black: #000;
+
+$EXbreakpoint: "<=575px";
+$SMbreakpoint: "<=576px";
+$MDbreakpoint: "<=768px";
+$LGbreakpoint: "<=992px";
+$XLbreakpoint: "<=1200px";
+$Custombreakpoint: "<=1331px";
 
 
 $defaultFontFamily: "Oswald", sans-serif;

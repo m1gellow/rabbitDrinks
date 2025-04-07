@@ -1,66 +1,148 @@
 @import '../../styles/vars';
+@import 'include-media';
 
-.hero{
+.hero {
     display: flex; 
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 100vh;
+    gap: 55px;
 
-    .bgImg{
+    .bgImg {
         position: absolute;
         z-index: 1;
-        opacity: 30%;
-    }
-    
-    .tagline{
-        font-family: $fancyFontFamily;
-        color: black;
-        font-size: 120px;
-        margin-bottom: 10px;
-        z-index: 888;
+        opacity: 0.3;
 
-    }
-    .storeName{
-       color: black;
-       position: absolute;
-       transform: translateX(420px) translateY(-105px);
-       font-family: $defaultFontFamily;
-       font-size: 40px;
-       z-index: 888;
-       
-       span{
-        font-family: $fancyFontFamily
-       }
+        @include media($LGbreakpoint) {
+            scale: 70%;
+        }
     }
 
-    .title{
-         font-family: $defaultFontFamily;
-        font-size: 150px;
-        color: $secondColor;
-        z-index: 888;
-        display: flex;
+    .main {
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
-        gap: 50px;
+
+        .tagline {
+            font-family: $fancyFontFamily;
+            color: black;
+            font-size: 120px;
+            z-index: 888;
+
+            @include media($XLbreakpoint) {
+                font-size: 80px;
+            }
+
+            @include media($MDbreakpoint) {
+                font-size: 40px;
+            }
+        }
+
+        .storeName {
+            color: black;
+            position: absolute;
+            transform: translate(420px, -20px); // Используйте translate вместо translateX и translateY
+            font-family: $defaultFontFamily;
+            font-size: 40px;
+            z-index: 888;
+
+            span {
+                font-family: $fancyFontFamily;
+            }
+
+            @include media($XLbreakpoint) {
+                display: none;
+            }
+        }
+
+        .title {
+            font-family: $defaultFontFamily;
+            font-size: 150px;
+            color: $secondColor;
+            z-index: 888;
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            justify-content: center;
+
+            @include media($Custombreakpoint) {
+                font-size: 120px;
+            }
+
+            @include media($XLbreakpoint) {
+                font-size: 90px;
+            }
+
+            @include media($LGbreakpoint) {
+                font-size: 60px;
+            }
+
+            @include media($MDbreakpoint) {
+                font-size: 64px;
+                text-align: center;
+                line-height: 105.3%;
+
+                span:first-child {
+                    position: absolute;
+                    transform: translateY(-200px);
+                }
+
+                span:last-child {
+                    position: absolute;
+                    transform: translateY(300px);
+                }
+            }
+
+       
+        }
+
+        .description {
+            font-family: $semiFancyFontFamily;
+            color: $secondColor;
+            font-size: 80px;
+            z-index: 888;
+
+            @include media($XLbreakpoint) {
+                font-size: 60px;
+            }
+
+            @include media($LGbreakpoint) {
+                font-size: 40px;
+                text-align: center;
+            }
+        }
     }
 
-    .description{
-        font-family: $semiFancyFontFamily;
-        color: $secondColor;
-        font-size: 80px;
-        z-index: 888;
-    }
-
-
-    .heroButton{
+    .heroButton {
         color: $accentColor;
         font-size: 64px;
         font-family: $defaultFontFamily;
         z-index: 888;
-        margin-top: 100px;
         border-bottom: 2px solid;
-        span{
+
+        span {
             font-family: $semiFancyFontFamily;
+        }
+
+        @include media($SMbreakpoint) {
+            font-size: 40px;
+        }
+    }
+
+    .offer {
+        font-family: $defaultFontFamily;
+        font-size: 50px;
+
+
+        span {
+            font-size: 40px;
+            font-family: $fancyFontFamily;
+        }
+
+        @include media($MDbreakpoint) {
+            display: none;
         }
     }
 }

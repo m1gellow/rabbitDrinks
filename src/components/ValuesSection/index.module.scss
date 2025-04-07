@@ -1,0 +1,89 @@
+@import '../../styles/vars';
+@import '../../styles/mixins';
+@import 'include-media';
+
+
+.valuesWarpper{
+    background-color: $secondColor;
+    height: 110vh;
+    padding: 35px;
+    width: 100%;
+
+    @include media($XLbreakpoint){
+        padding: 0px
+    }
+
+        .logo{
+            @include logo($white); 
+            padding-top: 12px;
+
+            @include media($XLbreakpoint){
+                font-size: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            }
+
+
+    .values{
+        color: $bgColor;
+        display: flex;
+        height: 80%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+        
+        
+        .title{
+            font-size: 150px;
+            font-family: $fancyFontFamily;
+            rotate: -4deg;
+
+            
+            @include media($Custombreakpoint){
+                font-size: 80px;
+             }
+            @include media($LGbreakpoint){
+                font-size: 70px;
+             }
+            @include media($MDbreakpoint){
+                font-size: 50px;
+             }
+        }
+        .description{
+            font-size: 100px;
+            font-family: $defaultFontFamily;
+            padding-left: 145px;
+            padding-right: 145px;
+            @include media($SMbreakpoint){
+                padding-left: 0;
+                padding-right: 0;
+            }
+      
+
+            span{
+                font-family: $semiFancyFontFamily;
+                font-size: 180px;
+
+                @include media($XLbreakpoint){
+                    font-size: 80px;
+                 }
+            }
+            @include media($XLbreakpoint){
+                font-size: 70px;
+             }
+            @include media($MDbreakpoint){
+                font-size: 50px;
+             }
+
+           
+        }
+    }
+
+    }
+
+
+    

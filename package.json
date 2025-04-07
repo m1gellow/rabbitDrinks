@@ -15,6 +15,11 @@
     "prepare": "husky"
   },
   "dependencies": {
+    "@gsap/react": "^2.1.2",
+    "classnames": "^2.5.1",
+    "gsap": "^3.12.7",
+    "include-media": "^2.0.0",
+    "lenis": "^1.2.3",
     "lucide-react": "^0.487.0",
     "react": "^19.0.0",
     "react-dom": "^19.1.0",
@@ -35,6 +40,7 @@
     "reset-css": "^5.0.2",
     "stylelint": "^16.17.0",
     "stylelint-config-prettier-scss": "^1.0.0",
+    "stylelint-config-standard-scss": "^14.0.0",
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.24.1",
     "vite": "^6.2.0"

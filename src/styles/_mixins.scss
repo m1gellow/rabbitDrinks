@@ -1,0 +1,6 @@
+@mixin logo($color: black){
+    font-family: $logoFont;
+    font-size: 64px;
+    font-weight: 500;
+    color: $color;
+}

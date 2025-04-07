@@ -1,14 +1,26 @@
 @import '../../styles/vars';
 
-
-
 .home{
-    background-color: $bgColor;
-    padding: 12px;
-    height: 100%;
     .header{
     border: 15px solid $secondColor;
-    padding: 15px 35px;
-    height: 100%;
+    background-color: $bgColor;
 }
+.valuesSection{
+    z-index: 999;
+}
+
+
+.loading{
+    background-color: $secondColor;
+    position: absolute;
+    width: 99.2vw;
+    height: 100vh;
+    z-index: 1000;
+}
+.orderSection{
+    z-index: 1000;
+    border: 15px solid $secondColor;
+    background-color: $bgColor;
+}
+
 }

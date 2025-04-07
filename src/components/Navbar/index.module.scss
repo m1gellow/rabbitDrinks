@@ -1,16 +1,21 @@
 @import '../../styles/vars';
+@import '../../styles/mixins';
+@import "include-media";
 
 
 .navbar{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    .logo{
-        font-family: $logoFont;
-        font-size: 64px;
-        font-weight: 500;
+    padding: 15px 35px;
+
+    @include media($LGbreakpoint){
+        justify-content: center;
     }
+
+
+    @include logo();
+
     .navItems{
         font-family: $defaultFontFamily;
         color: $secondColor;
@@ -18,8 +23,11 @@
         font-weight: lighter;
         display: flex;
         gap: 60px;
-        border: none;
-        transition: all .4s;
+
+        @include media($LGbreakpoint){
+            display: none;
+        }
+
         .link{
             :hover{
             border-bottom: 2px solid $secondColor;
@@ -28,12 +36,15 @@
         
       
     }
+
     .icons{
         display: flex;
         flex-direction: row;
         gap: 42px;
         
-      
+        @include media($LGbreakpoint){
+            display: none;
+        }
            
     }
 }
