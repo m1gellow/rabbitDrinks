@@ -5,10 +5,8 @@
 
 .valuesWarpper{
     background-color: $secondColor;
-    height: 110vh;
+    height: 100vh;
     padding: 35px;
-    width: 100%;
-
     @include media($XLbreakpoint){
         padding: 0px
     }
@@ -73,13 +71,16 @@
                  }
             }
             @include media($XLbreakpoint){
+                font-size: 90px;
+             }
+            @include media($LGbreakpoint){
                 font-size: 70px;
              }
             @include media($MDbreakpoint){
                 font-size: 50px;
+                padding: 10px;
              }
 
-           
         }
     }
 

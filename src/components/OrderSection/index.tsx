@@ -37,7 +37,10 @@ export const OrderSection = () => {
       </div>
       <div className={css.productsList}>
         {products.map((product) => (
-          <ProductCard />
+          <div key={product.name}>
+               <ProductCard />
+          </div>
+       
         ))}
       </div>
     </div>

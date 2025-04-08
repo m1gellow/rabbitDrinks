@@ -2,9 +2,12 @@
 @import '../../styles/vars';
 @import 'include-media';
 
-.orderSection{
+.productPage{
     padding: 35px;
-    background-color: $bgColor;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+
 
     
     .logo{
@@ -34,9 +37,6 @@
         
         .title{
             font-family: $defaultFontFamily;
-            background-color: #EAC2B6;
-            padding: 5px;
-
             font-size: 100px;
             span{
                 font-family: $fancyFontFamily;

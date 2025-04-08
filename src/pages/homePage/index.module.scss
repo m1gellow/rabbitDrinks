@@ -4,6 +4,7 @@
     .header{
     border: 15px solid $secondColor;
     background-color: $bgColor;
+    height: 99vh;
 }
 .valuesSection{
     z-index: 999;
@@ -19,7 +20,6 @@
 }
 .orderSection{
     z-index: 1000;
-    border: 15px solid $secondColor;
     background-color: $bgColor;
 }
 
